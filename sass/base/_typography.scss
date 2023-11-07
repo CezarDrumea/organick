@@ -1,30 +1,31 @@
 // HEADING
 
-.heading {
+.heading-1 {
+  font-size: 7rem;
+  line-height: 8.4rem;
   font-weight: 700;
   letter-spacing: 0.036rem;
+}
 
-  &-1 {
-    font-size: 7rem;
-    line-height: 8.4rem;
-  }
+.heading-2 {
+  font-size: 4.8rem;
+  line-height: 5.6rem;
+  font-weight: 700;
+  letter-spacing: 0.036rem;
+}
 
-  &-2 {
-    font-size: 4.8rem;
-    line-height: 5.6rem;
-  }
+.heading-3 {
+  font-size: 4rem;
+  line-height: 4.8rem;
+  font-weight: 400;
+  letter-spacing: 0.036rem;
+}
 
-  &-3 {
-    font-size: 4rem;
-    line-height: 4.8rem;
-    font-weight: 400;
-  }
-
-  &-4 {
-    font-size: 3rem;
-    line-height: 3.2rem;
-    letter-spacing: normal;
-  }
+.heading-4 {
+  font-size: 3rem;
+  line-height: 3.2rem;
+  font-weight: 700;
+  letter-spacing: 0.036rem;
 }
 
 // DISPLAY
@@ -34,69 +35,67 @@
   font-size: 3.6rem;
   line-height: 6.4rem;
   letter-spacing: 0.036rem;
+  font-weight: 400;
   text-transform: capitalize;
 }
 
 // SUBTITLE
 
-.subtitle {
+.subtitle-small {
+  line-height: 3.2rem;
+  font-size: 2.2rem;
+  font-weight: 400;
+  letter-spacing: 0.036rem;
+}
+
+.subtitle-medium {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  font-weight: 400;
   letter-spacing: 0.036rem;
 
-  &-small {
-    font-size: 2.2rem;
-    line-height: 3.2rem;
-  }
-
-  &-medium {
-    font-size: 2.4rem;
-    line-height: 3.2rem;
-
-    &-bold {
-      font-weight: 700;
-      text-transform: capitalize;
-    }
-  }
-
-  &-large {
-    font-size: 2.6rem;
+  &--bold {
     font-weight: 700;
-    line-height: 3.2rem;
+    text-transform: capitalize;
   }
+}
+
+.subtitle-large {
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 3.2rem;
 }
 
 // BODY
 
-.text-body {
+.text-body-small {
+  font-size: 1.8rem;
   letter-spacing: 0.036rem;
+  line-height: 3.2rem;
+}
 
-  &-small {
-    font-size: 1.8rem;
-    line-height: 3.2rem;
-  }
+.text-body-large {
+  font-size: 2rem;
+  letter-spacing: 0.036rem;
+  line-height: 3.2rem;
 
-  &-large {
-    font-size: 2rem;
-    line-height: 3.2rem;
-
-    &-bold {
-      font-weight: 700;
-    }
+  &--bold {
+    font-weight: 700;
   }
 }
 
 // LABEL
 
-.text-label {
+.text-label-small {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  font-weight: 400;
   letter-spacing: 0.036rem;
+}
 
-  &-small {
-    font-size: 1.4rem;
-    line-height: 1.6rem;
-  }
-
-  &-large {
-    font-size: 1.6rem;
-    font-weight: 700;
-    line-height: 2.4rem;
-  }
+.text-label-large {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0.036rem;
 }

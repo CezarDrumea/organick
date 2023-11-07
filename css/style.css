@@ -1,3 +1,19 @@
+.mb-2xs {
+  margin-bottom: 2.4rem;
+}
+
+.mb-xs {
+  margin-bottom: 3rem;
+}
+
+.mb-s {
+  margin-bottom: 3.6rem;
+}
+
+.mb-m {
+  margin-bottom: 4rem;
+}
+
 *,
 *::before,
 *::after {
@@ -8,10 +24,10 @@
 
 html {
   box-sizing: border-box;
-  color: #274c5b;
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  color: #274c5b;
 }
 
 a:link,
@@ -19,27 +35,32 @@ a:visited {
   color: inherit;
 }
 
-.heading {
-  font-weight: 700;
-  letter-spacing: 0.036rem;
-}
 .heading-1 {
   font-size: 7rem;
   line-height: 8.4rem;
+  font-weight: 700;
+  letter-spacing: 0.036rem;
 }
+
 .heading-2 {
   font-size: 4.8rem;
   line-height: 5.6rem;
+  font-weight: 700;
+  letter-spacing: 0.036rem;
 }
+
 .heading-3 {
   font-size: 4rem;
   line-height: 4.8rem;
   font-weight: 400;
+  letter-spacing: 0.036rem;
 }
+
 .heading-4 {
   font-size: 3rem;
   line-height: 3.2rem;
-  letter-spacing: normal;
+  font-weight: 700;
+  letter-spacing: 0.036rem;
 }
 
 .text-display {
@@ -47,56 +68,182 @@ a:visited {
   font-size: 3.6rem;
   line-height: 6.4rem;
   letter-spacing: 0.036rem;
+  font-weight: 400;
   text-transform: capitalize;
 }
 
-.subtitle {
+.subtitle-small {
+  line-height: 3.2rem;
+  font-size: 2.2rem;
+  font-weight: 400;
   letter-spacing: 0.036rem;
 }
-.subtitle-small {
-  font-size: 2.2rem;
-  line-height: 3.2rem;
-}
+
 .subtitle-medium {
   font-size: 2.4rem;
   line-height: 3.2rem;
+  font-weight: 400;
+  letter-spacing: 0.036rem;
 }
-.subtitle-medium-bold {
+.subtitle-medium--bold {
   font-weight: 700;
   text-transform: capitalize;
 }
+
 .subtitle-large {
   font-size: 2.6rem;
   font-weight: 700;
   line-height: 3.2rem;
 }
 
-.text-body {
-  letter-spacing: 0.036rem;
-}
 .text-body-small {
   font-size: 1.8rem;
+  letter-spacing: 0.036rem;
   line-height: 3.2rem;
 }
+
 .text-body-large {
   font-size: 2rem;
+  letter-spacing: 0.036rem;
   line-height: 3.2rem;
 }
-.text-body-large-bold {
+.text-body-large--bold {
   font-weight: 700;
 }
 
-.text-label {
-  letter-spacing: 0.036rem;
-}
 .text-label-small {
   font-size: 1.4rem;
   line-height: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.036rem;
 }
+
 .text-label-large {
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 2.4rem;
+  letter-spacing: 0.036rem;
+}
+
+.button {
+  padding: 2.4rem;
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  border: none;
+  border-radius: 1.6rem;
+  background-color: transparent;
+  font: inherit;
+  cursor: pointer;
+}
+.button__icon {
+  width: 3.5rem;
+  height: 1.2rem;
+}
+.button--primary {
+  background-color: #ffa858;
+  color: #274c5b;
+}
+.button--secondary {
+  background-color: #274c5b;
+  color: #fff;
+}
+.icon-box {
+  width: 9.6rem;
+  height: 9.6rem;
+  border-radius: 2rem;
+  background-color: #fff;
+  display: grid;
+  place-content: center;
+}
+.icon-box__icon {
+  width: 4.8rem;
+  height: 4.8rem;
+}
+.icon-box--1 {
+  grid-row: 1/3;
+  grid-column: 1/2;
+}
+.icon-box--2 {
+  grid-row: 3/5;
+  grid-column: 1/2;
+}
+
+.label {
+  padding: 0.8rem 2.4rem;
+  background-color: #274c5b;
+  color: #fff;
+  display: inline-block;
+  border-radius: 0.8rem;
+}
+
+.offer-card {
+  height: 38.4rem;
+  background-size: cover;
+  background-position: 50%;
+  border-radius: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 0 6.4rem;
+  cursor: pointer;
+}
+.offer-card__subtitle--1 {
+  color: #fff;
+}
+.offer-card__subtitle--2 {
+  color: #7eb693;
+}
+.offer-card__title {
+  max-width: 26rem;
+}
+.offer-card__title--1 {
+  color: #fff;
+}
+.offer-card--1 {
+  background-image: url(../img/offer-1.jpeg);
+}
+.offer-card--2 {
+  background-image: url(../img/offer-2.jpeg);
+}
+
+.product-card {
+  padding: 3.2rem;
+  border-radius: 3.2rem;
+  background-color: #f7f7f7;
+  max-width: 43.2rem;
+  cursor: pointer;
+}
+.product-card__img {
+  display: block;
+  width: 100%;
+}
+.product-card__divider {
+  border: 0.1rem solid #b8b8b8;
+  margin: 1.6rem 0;
+}
+.product-card__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-card__rating {
+  gap: 0.4rem;
+  display: flex;
+}
+.product-card__star-icon {
+  height: 1.6rem;
+  width: 1.6rem;
+}
+.product-card__price {
+  gap: 1rem;
+  display: flex;
+}
+.product-card__price-old {
+  color: #b8b8b8;
+  text-decoration: line-through;
 }
 
 .header {
@@ -106,6 +253,10 @@ a:visited {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.header__logo {
+  height: 5.6rem;
+  width: 20rem;
 }
 .header__nav {
   display: flex;
@@ -117,6 +268,81 @@ a:visited {
 }
 .header__link.header__link--active, .header__link:link.header__link--active, .header__link:visited.header__link--active {
   color: #7eb693;
+}
+
+.about {
+  padding: 8rem 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+}
+.about > * {
+  max-width: 66.4rem;
+  flex: 1;
+}
+.about__img {
+  width: 100%;
+}
+.about__content > *:not(:last-child) {
+  margin-bottom: 5.6rem;
+}
+.about__about-us {
+  color: #7eb693;
+}
+.about__title {
+  max-width: 55.2rem;
+}
+.about__principles {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  column-gap: 2rem;
+}
+
+.hero {
+  height: calc(100vh - 15.2rem);
+  background-image: url(../img/hero.jpeg);
+  background-size: cover;
+  background-position: 50%;
+  padding: 0 4rem;
+  display: grid;
+  grid-template-columns: minmax(min-content, 133rem);
+  place-content: center;
+  justify-items: start;
+}
+.hero__title {
+  max-width: 49.6rem;
+}
+.hero__subtitle {
+  color: #7eb693;
+}
+
+.offers {
+  background-color: #fff;
+  padding: 9.6rem 4rem;
+  display: grid;
+  gap: 3.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(max-content, 66.4rem));
+  justify-content: center;
+}
+
+.products {
+  padding: 9.6rem 4rem;
+}
+.products__organic {
+  color: #7eb693;
+  text-align: center;
+}
+.products__title {
+  text-align: center;
+}
+.products__cards {
+  max-width: 136rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(max-content, 43.2rem));
+  justify-content: center;
+  margin: 0 auto;
+  gap: 3.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

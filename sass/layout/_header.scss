@@ -6,6 +6,11 @@
   align-items: center;
   justify-content: space-between;
 
+  &__logo {
+    height: 5.6rem;
+    width: 20rem;
+  }
+
   &__nav {
     display: flex;
     gap: 4rem;

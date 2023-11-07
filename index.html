@@ -9,13 +9,18 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Yellowtail&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="img/logo-no-text.svg" type="image/x-icon" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="img/logo-no-text.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Organick</title>
   </head>
   <body>
     <header class="header">
-      <img src="img/logo.svg" alt="Organick logo" class="header__logo" />
+      <svg class="header__logo">
+        <use
+          href="img/sprite.svg#logo-text"
+          xlink:href="img/sprite.svg#logo-text"
+        ></use>
+      </svg>
       <nav class="header__nav text-body-large">
         <a href="#" class="header__link header__link--active">Home</a>
         <a href="#" class="header__link">About Us</a>
@@ -24,5 +29,451 @@
         <a href="#" class="header__link">Contact Us</a>
       </nav>
     </header>
+
+    <main>
+      <section class="hero">
+        <h5 class="hero__subtitle text-display">Made with nature</h5>
+        <h1 class="hero__title heading-1 mb-s">
+          Welcome to the world of nature and organic.
+        </h1>
+        <button class="button button--primary">
+          <span class="text-body-large">Explore Now</span>
+          <svg class="button__icon">
+            <use
+              href="img/sprite.svg#arrow-right"
+              xlink:href="img/sprite.svg#arrow-right"
+            ></use>
+          </svg>
+        </button>
+      </section>
+
+      <section class="offers">
+        <div class="offer-card offer-card--1">
+          <h5 class="offer-card__subtitle offer-card__subtitle--1 text-display">
+            Natural!!
+          </h5>
+          <h3 class="offer-card__title offer-card__title--1 heading-3">
+            Get Garden Fresh Fruits
+          </h3>
+        </div>
+
+        <div class="offer-card offer-card--2">
+          <h5 class="offer-card__subtitle offer-card__subtitle--2 text-display">
+            Offer!!
+          </h5>
+          <h3 class="offer-card__title offer-card__title--2 heading-3">
+            Get 10% off on Vegetables
+          </h3>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="about__img-container">
+          <img src="img/citrics.png" alt="Citrics" class="about__img" />
+        </div>
+        <div class="about__content">
+          <div class="about__description">
+            <h5 class="about__about-us text-display">About us</h5>
+            <h2 class="about__title heading-2 mb-2xs">
+              We Believe in Organic Foods For Strong Health
+            </h2>
+            <p class="about__text text-body-small">
+              Welcome to the world of natural and organic. Here you can discover
+              the bounty of nature. We have grown on the principles of health,
+              and care. We aim to give our customers a healthy chemical-free
+              meal for perfect nutrition.
+            </p>
+          </div>
+
+          <div class="about__principles">
+            <div class="icon-box icon-box--1">
+              <svg class="icon-box__icon">
+                <use
+                  href="img/sprite.svg#bowl"
+                  xlink:href="img/sprite.svg#bowl"
+                ></use>
+              </svg>
+            </div>
+            <h6 class="subtitle-medium">Organic Foods Only</h6>
+            <p class="about__principle-text text-body-small mb-2xs">
+              The Product that you ordered will be verified that we have or not
+              if have we will start to move on with the next step.
+            </p>
+            <div class="icon-box icon-box--2">
+              <svg class="icon-box__icon">
+                <use
+                  href="img/sprite.svg#postbox"
+                  xlink:href="img/sprite.svg#postbox"
+                ></use>
+              </svg>
+            </div>
+            <h6 class="subtitle-medium">Quality Standards</h6>
+            <p class="about__principle-text text-body-small">
+              Once your product is packed it will be delivered to your nearby
+              locality you can directly visit the to buy the product.
+            </p>
+          </div>
+
+          <button class="button button--secondary">
+            <span class="text-body-large">Shop Now</span>
+            <svg class="button__icon">
+              <use
+                href="img/sprite.svg#arrow-right"
+                xlink:href="img/sprite.svg#arrow-right"
+              ></use>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <section class="products">
+        <h5 class="products__organic text-display">Organic</h5>
+        <h2 class="products__title heading-2 mb-m">Our Products</h2>
+
+        <div class="products__cards">
+          <div class="product-card">
+            <div class="label text-label-large">Vegetables</div>
+            <figure>
+              <img
+                src="img/broccoli.jpeg"
+                alt="Broccoli"
+                class="product-card__img mb-xs"
+              />
+              <figcaption class="text-body subtitle-small">
+                Calabrese Broccoli
+              </figcaption>
+            </figure>
+            <hr class="product-card__divider" />
+            <div class="product-card__bottom">
+              <div class="product-card__price">
+                <span class="product-card__price-old text-body-small"
+                  >$ 25.00 USD</span
+                ><span
+                  class="product-card__price-new text-body-large text-body-large--bold"
+                  >$ 21.00 USD</span
+                >
+              </div>
+              <div class="product-card__rating">
+                <svg class="product-card__star-icon">
+                  <use
+                    href="img/sprite.svg#star"
+                    xlink:href="img/sprite.svg#star"
+                  ></use>
+                </svg>
+                <svg class="product-card__star-icon">
+                  <use
+                    href="img/sprite.svg#star"
+                    xlink:href="img/sprite.svg#star"
+                  ></use>
+                </svg>
+                <svg class="product-card__star-icon">
+                  <use
+                    href="img/sprite.svg#star"
+                    xlink:href="img/sprite.svg#star"
+                  ></use>
+                </svg>
+                <svg class="product-card__star-icon">
+                  <use
+                    href="img/sprite.svg#star"
+                    xlink:href="img/sprite.svg#star"
+                  ></use>
+                </svg>
+                <svg class="product-card__star-icon">
+                  <use
+                    href="img/sprite.svg#star"
+                    xlink:href="img/sprite.svg#star"
+                  ></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="label text-label-large">Vegetables</div>
+            <figure>
+              <img
+                src="img/corn.jpeg"
+                alt="Corn"
+                class="product-card__img mb-xs"
+              />
+              <figcaption class="text-body subtitle-small">
+                Fresh Corn
+              </figcaption>
+            </figure>
+            <hr class="product-card__divider" />
+            <div class="product-card__bottom">
+              <div class="product-card__price">
+                <span class="product-card__price-old text-body-small"
+                  >$ 25.00 USD</span
+                ><span
+                  class="product-card__price-new text-body-large text-body-large--bold"
+                  >$ 21.00 USD</span
+                >
+              </div>
+              <div class="product-card__rating">
+                <svg class="product-card__star-icon">
+                  <use
+                    href="img/sprite.svg#star"
+                    xlink:href="img/sprite.svg#star"
+                  ></use>
+                </svg>
+                <svg class="product-card__star-icon">
+                  <use
+                    href="img/sprite.svg#star"
+                    xlink:href="img/sprite.svg#star"
+                  ></use>
+                </svg>
+                <svg class="product-card__star-icon">
+                  <use
+                    href="img/sprite.svg#star"
+                    xlink:href="img/sprite.svg#star"
+                  ></use>
+                </svg>
+                <svg class="product-card__star-icon">
+                  <use
+                    href="img/sprite.svg#star"
+                    xlink:href="img/sprite.svg#star"
+                  ></use>
+                </svg>
+                <svg class="product-card__star-icon">
+                  <use
+                    href="img/sprite.svg#star"
+                    xlink:href="img/sprite.svg#star"
+                  ></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="label text-label-large">Millets</div>
+            <figure>
+              <img
+                src="img/pistachios.jpeg"
+                alt="Pistachios"
+                class="product-card__img mb-xs"
+              />
+              <figcaption class="text-body subtitle-small">
+                Dried Pistachios
+              </figcaption>
+            </figure>
+            <hr class="product-card__divider" />
+            <div class="product-card__bottom">
+              <div class="product-card__price">
+                <span class="product-card__price-old text-body-small"
+                  >$ 25.00 USD</span
+                ><span
+                  class="product-card__price-new text-body-large text-body-large--bold"
+                  >$ 21.00 USD</span
+                >
+              </div>
+              <div class="product-card__rating">
+                <svg class="product-card__star-icon">
+                  <use
+                    href="img/sprite.svg#star"
+                    xlink:href="img/sprite.svg#star"
+                  ></use>
+                </svg>
+                <svg class="product-card__star-icon">
+                  <use
+                    href="img/sprite.svg#star"
+                    xlink:href="img/sprite.svg#star"
+                  ></use>
+                </svg>
+                <svg class="product-card__star-icon">
+                  <use
+                    href="img/sprite.svg#star"
+                    xlink:href="img/sprite.svg#star"
+                  ></use>
+                </svg>
+                <svg class="product-card__star-icon">
+                  <use
+                    href="img/sprite.svg#star"
+                    xlink:href="img/sprite.svg#star"
+                  ></use>
+                </svg>
+                <svg class="product-card__star-icon">
+                  <use
+                    href="img/sprite.svg#star"
+                    xlink:href="img/sprite.svg#star"
+                  ></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="label text-label-large">Vegetables</div>
+            <figure>
+              <img
+                src="img/tomato.jpeg"
+                alt="Tomato"
+                class="product-card__img mb-xs"
+              />
+              <figcaption class="text-body subtitle-small">
+                Vegan Red Tomato
+              </figcaption>
+            </figure>
+            <hr class="product-card__divider" />
+            <div class="product-card__bottom">
+              <div class="product-card__price">
+                <span class="product-card__price-old text-body-small"
+                  >$ 25.00 USD</span
+                ><span
+                  class="product-card__price-new text-body-large text-body-large--bold"
+                  >$ 21.00 USD</span
+                >
+              </div>
+              <div class="product-card__rating">
+                <svg class="product-card__star-icon">
+                  <use
+                    href="img/sprite.svg#star"
+                    xlink:href="img/sprite.svg#star"
+                  ></use>
+                </svg>
+                <svg class="product-card__star-icon">
+                  <use
+                    href="img/sprite.svg#star"
+                    xlink:href="img/sprite.svg#star"
+                  ></use>
+                </svg>
+                <svg class="product-card__star-icon">
+                  <use
+                    href="img/sprite.svg#star"
+                    xlink:href="img/sprite.svg#star"
+                  ></use>
+                </svg>
+                <svg class="product-card__star-icon">
+                  <use
+                    href="img/sprite.svg#star"
+                    xlink:href="img/sprite.svg#star"
+                  ></use>
+                </svg>
+                <svg class="product-card__star-icon">
+                  <use
+                    href="img/sprite.svg#star"
+                    xlink:href="img/sprite.svg#star"
+                  ></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="label text-label-large">Fruits</div>
+            <figure>
+              <img
+                src="img/almonds.jpeg"
+                alt="Almonds"
+                class="product-card__img mb-xs"
+              />
+              <figcaption class="text-body subtitle-small">
+                Organic Almonds
+              </figcaption>
+            </figure>
+            <hr class="product-card__divider" />
+            <div class="product-card__bottom">
+              <div class="product-card__price">
+                <span class="product-card__price-old text-body-small"
+                  >$ 25.00 USD</span
+                ><span
+                  class="product-card__price-new text-body-large text-body-large--bold"
+                  >$ 21.00 USD</span
+                >
+              </div>
+              <div class="product-card__rating">
+                <svg class="product-card__star-icon">
+                  <use
+                    href="img/sprite.svg#star"
+                    xlink:href="img/sprite.svg#star"
+                  ></use>
+                </svg>
+                <svg class="product-card__star-icon">
+                  <use
+                    href="img/sprite.svg#star"
+                    xlink:href="img/sprite.svg#star"
+                  ></use>
+                </svg>
+                <svg class="product-card__star-icon">
+                  <use
+                    href="img/sprite.svg#star"
+                    xlink:href="img/sprite.svg#star"
+                  ></use>
+                </svg>
+                <svg class="product-card__star-icon">
+                  <use
+                    href="img/sprite.svg#star"
+                    xlink:href="img/sprite.svg#star"
+                  ></use>
+                </svg>
+                <svg class="product-card__star-icon">
+                  <use
+                    href="img/sprite.svg#star"
+                    xlink:href="img/sprite.svg#star"
+                  ></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="label text-label-large">Millets</div>
+            <figure>
+              <img
+                src="img/hazelnuts.jpeg"
+                alt="Hazelnuts"
+                class="product-card__img mb-xs"
+              />
+              <figcaption class="text-body subtitle-small">
+                Brown Hazelnuts
+              </figcaption>
+            </figure>
+            <hr class="product-card__divider" />
+            <div class="product-card__bottom">
+              <div class="product-card__price">
+                <span class="product-card__price-old text-body-small"
+                  >$ 25.00 USD</span
+                ><span
+                  class="product-card__price-new text-body-large text-body-large--bold"
+                  >$ 21.00 USD</span
+                >
+              </div>
+              <div class="product-card__rating">
+                <svg class="product-card__star-icon">
+                  <use
+                    href="img/sprite.svg#star"
+                    xlink:href="img/sprite.svg#star"
+                  ></use>
+                </svg>
+                <svg class="product-card__star-icon">
+                  <use
+                    href="img/sprite.svg#star"
+                    xlink:href="img/sprite.svg#star"
+                  ></use>
+                </svg>
+                <svg class="product-card__star-icon">
+                  <use
+                    href="img/sprite.svg#star"
+                    xlink:href="img/sprite.svg#star"
+                  ></use>
+                </svg>
+                <svg class="product-card__star-icon">
+                  <use
+                    href="img/sprite.svg#star"
+                    xlink:href="img/sprite.svg#star"
+                  ></use>
+                </svg>
+                <svg class="product-card__star-icon">
+                  <use
+                    href="img/sprite.svg#star"
+                    xlink:href="img/sprite.svg#star"
+                  ></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

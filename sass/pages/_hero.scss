@@ -1,0 +1,19 @@
+.hero {
+  height: calc(100vh - 15.2rem);
+  background-image: url(../img/hero.jpeg);
+  background-size: cover;
+  background-position: 50%;
+  padding: 0 4rem;
+  display: grid;
+  grid-template-columns: minmax(min-content, 133rem);
+  place-content: center;
+  justify-items: start;
+
+  &__title {
+    max-width: 49.6rem;
+  }
+
+  &__subtitle {
+    color: $color-primary;
+  }
+}

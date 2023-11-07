@@ -1,0 +1,21 @@
+.products {
+  padding: 9.6rem 4rem;
+
+  &__organic {
+    color: $color-primary;
+    text-align: center;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__cards {
+    max-width: 136rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(max-content, 43.2rem));
+    justify-content: center;
+    margin: 0 auto;
+    gap: 3.2rem;
+  }
+}
