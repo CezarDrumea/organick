@@ -33,6 +33,10 @@
     align-items: center;
   }
 
+  &__rating {
+    margin-bottom: 0.3rem;
+  }
+
   &__price-old {
     color: $color-grey-4;
     text-decoration: line-through;

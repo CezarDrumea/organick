@@ -249,6 +249,9 @@ a:visited {
   display: flex;
   align-items: center;
 }
+.product-card__rating {
+  margin-bottom: 0.3rem;
+}
 .product-card__price-old {
   color: #b8b8b8;
   text-decoration: line-through;
@@ -338,6 +341,35 @@ a:visited {
 }
 .hero__subtitle {
   color: #7eb693;
+}
+
+.offer-products {
+  background-color: #274c5b;
+  padding: 8rem 4rem;
+}
+.offer-products__top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2.4rem 8rem;
+  margin-bottom: 4.8rem;
+}
+.offer-products__subtitle {
+  color: #7eb693;
+}
+.offer-products__title {
+  color: #fff;
+}
+.offer-products__button {
+  align-self: flex-end;
+}
+.offer-products__cards {
+  max-width: 136rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3.2rem;
+  margin: 0 auto;
 }
 
 .offers {
