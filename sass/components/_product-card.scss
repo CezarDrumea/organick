@@ -1,11 +1,6 @@
 .product-card {
-  padding: 3.2rem;
-  border-radius: 3.2rem;
   background-color: $color-grey-1;
-  max-width: 43.2rem;
-  min-width: 36.8rem;
-  flex: 1;
-  cursor: pointer;
+  padding: 3.2rem;
 
   &__img {
     display: block;
@@ -39,52 +34,5 @@
   &__price-old {
     color: $color-grey-4;
     text-decoration: line-through;
-  }
-
-  &__bg-img {
-    overflow: hidden;
-    padding: 0;
-    background-color: transparent;
-    position: relative;
-    height: 58.4rem;
-    background-size: cover;
-    background-position: 50%;
-
-    &--1 {
-      background-image: url(../img/juice.jpeg);
-    }
-
-    &--2 {
-      background-image: url(../img/spinach.jpeg);
-    }
-
-    &--3 {
-      background-image: url(../img/biscuits.jpeg);
-    }
-  }
-
-  &__gradient {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 33.4rem;
-    background: linear-gradient(
-      180deg,
-      rgba(#000, 0) 0%,
-      rgba(#000, 0.74) 100%
-    );
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-  }
-
-  &__label {
-    text-align: center;
-    width: 32rem;
-    background-color: $color-white;
-    padding: 3.2rem 0;
-    border-radius: 2.4rem;
-    margin-bottom: 5.6rem;
   }
 }

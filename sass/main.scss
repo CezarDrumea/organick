@@ -8,17 +8,19 @@
 @import "./components/icon-box";
 @import "./components/label";
 @import "./components/offer-card";
+@import "./components/option-card";
 @import "./components/product-card";
 @import "./components/rating";
+@import "./components/vertical-card";
 
 @import "./layout/header";
-@import "./layout/product-cards";
+@import "./layout/vertical-cards";
 
 @import "./pages/about";
-@import "./pages/choose-products";
 @import "./pages/eco-friendly";
 @import "./pages/hero";
 @import "./pages/offer-products";
 @import "./pages/offers";
+@import "./pages/options";
 @import "./pages/products";
 @import "./pages/testimonials";
