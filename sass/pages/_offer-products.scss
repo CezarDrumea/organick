@@ -3,11 +3,12 @@
   padding: 8rem 4rem;
 
   &__top {
+    max-width: 136rem;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 2.4rem 8rem;
-    margin-bottom: 4.8rem;
+    margin: 0 auto 4.8rem auto;
   }
 
   &__subtitle {
@@ -20,14 +21,5 @@
 
   &__button {
     align-self: flex-end;
-  }
-
-  &__cards {
-    max-width: 136rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 3.2rem;
-    margin: 0 auto;
   }
 }
