@@ -1,3 +1,7 @@
+.mb-3xs {
+  margin-bottom: 1.6rem;
+}
+
 .mb-2xs {
   margin-bottom: 2.4rem;
 }
@@ -12,6 +16,10 @@
 
 .mb-m {
   margin-bottom: 4rem;
+}
+
+.mb-xl {
+  margin-bottom: 6.4rem;
 }
 
 *,
@@ -178,6 +186,9 @@ a:visited {
 }
 
 .offer-card {
+  max-width: 66.4rem;
+  min-width: 40rem;
+  flex: 1;
   height: 38.4rem;
   background-size: cover;
   background-position: 50%;
@@ -213,11 +224,14 @@ a:visited {
   border-radius: 3.2rem;
   background-color: #f7f7f7;
   max-width: 43.2rem;
+  min-width: 36.8rem;
+  flex: 1;
   cursor: pointer;
 }
 .product-card__img {
   display: block;
   width: 100%;
+  margin-bottom: 3rem;
 }
 .product-card__divider {
   border: 0.1rem solid #b8b8b8;
@@ -225,25 +239,32 @@ a:visited {
 }
 .product-card__bottom {
   display: flex;
+  gap: 1rem;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
-.product-card__rating {
-  gap: 0.4rem;
-  display: flex;
-}
-.product-card__star-icon {
-  height: 1.6rem;
-  width: 1.6rem;
-}
 .product-card__price {
   gap: 1rem;
   display: flex;
+  align-items: center;
 }
 .product-card__price-old {
   color: #b8b8b8;
   text-decoration: line-through;
+}
+
+.rating {
+  gap: 0.4rem;
+  display: flex;
+}
+.rating__star-icon--small {
+  height: 1.6rem;
+  width: 1.6rem;
+}
+.rating__star-icon--large {
+  height: 2.4rem;
+  width: 2.4rem;
 }
 
 .header {
@@ -287,11 +308,12 @@ a:visited {
 .about__content > *:not(:last-child) {
   margin-bottom: 5.6rem;
 }
-.about__about-us {
+.about__subtitle {
   color: #7eb693;
 }
 .about__title {
   max-width: 55.2rem;
+  margin-bottom: 2.4rem;
 }
 .about__principles {
   display: grid;
@@ -312,6 +334,7 @@ a:visited {
 }
 .hero__title {
   max-width: 49.6rem;
+  margin-bottom: 3.6rem;
 }
 .hero__subtitle {
   color: #7eb693;
@@ -320,29 +343,68 @@ a:visited {
 .offers {
   background-color: #fff;
   padding: 9.6rem 4rem;
-  display: grid;
   gap: 3.2rem;
-  grid-template-columns: repeat(auto-fit, minmax(max-content, 66.4rem));
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .products {
   padding: 9.6rem 4rem;
 }
-.products__organic {
+.products__subtitle {
   color: #7eb693;
   text-align: center;
 }
 .products__title {
   text-align: center;
+  margin-bottom: 4.8rem;
 }
 .products__cards {
   max-width: 136rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(max-content, 43.2rem));
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  margin: 0 auto;
   gap: 3.2rem;
+  margin: 0 auto;
+}
+
+.testimonials {
+  padding: 16rem 8rem;
+  background-image: url(../img/lemon-cinnamon.jpeg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+.testimonials__content {
+  max-width: 89.6rem;
+  text-align: center;
+}
+.testimonials__subtitle {
+  color: #7eb693;
+}
+.testimonials__title {
+  margin-bottom: 6.4rem;
+}
+.testimonials__img {
+  width: 11.2rem;
+  display: block;
+  border-radius: 50%;
+  margin: 1.6rem auto;
+}
+.testimonials__rating {
+  justify-content: center;
+  margin-bottom: 3.2rem;
+}
+.testimonials__testimonial {
+  color: #525c60;
+  margin-bottom: 2.4rem;
+}
+.testimonials__consumer {
+  display: inline-block;
+  color: #525c60;
+  margin-top: 0.8rem;
 }
 
 /*# sourceMappingURL=style.css.map */
