@@ -1,21 +1,30 @@
 .eco-friendly {
   background-color: $color-white;
+  padding: 0 4rem;
   position: relative;
 
-  &__img {
+  &__bg-container {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
     width: 57vw;
-    display: block;
-    object-fit: cover;
-    height: clamp(71.2rem, 78vh, 100rem);
+    background-image: url(../img/farm.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
-  &__text-container {
-    position: absolute;
-    max-width: 71.2rem;
-    top: 50%;
-    left: 50%;
-    transform: translate(-6%, -50%);
+  &__content {
+    position: relative;
+    z-index: 1;
+    max-width: 136rem;
+    padding: clamp(5.6rem, 15vw - 16rem, 22rem) 0;
+    margin: 0 auto;
+  }
 
+  &__text-box {
+    margin-left: 47.6%;
+    max-width: 71.2rem;
     padding: 3.6rem 3.5rem 6.8rem 4.8rem;
     background-color: $color-white;
     border-radius: 3.2rem;

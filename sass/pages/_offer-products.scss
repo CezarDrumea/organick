@@ -1,25 +1,4 @@
 .offer-products {
   background-color: $color-body;
   padding: 8rem 4rem;
-
-  &__top {
-    max-width: 136rem;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 2.4rem 8rem;
-    margin: 0 auto 4.8rem auto;
-  }
-
-  &__subtitle {
-    color: $color-primary;
-  }
-
-  &__title {
-    color: $color-white;
-  }
-
-  &__button {
-    align-self: flex-end;
-  }
 }

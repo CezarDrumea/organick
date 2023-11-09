@@ -156,6 +156,15 @@ a:visited {
   background-color: #274c5b;
   color: #fff;
 }
+.button--outline {
+  background-color: #fff;
+  border: 0.1rem solid #274c5b;
+}
+.button--link:link, .button--link:visited {
+  text-decoration: none;
+  color: #274c5b;
+}
+
 .icon-box {
   width: 9.6rem;
   height: 9.6rem;
@@ -309,6 +318,15 @@ a:visited {
   cursor: pointer;
 }
 
+.cards {
+  max-width: 136rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3.2rem;
+  margin: 0 auto;
+}
+
 .header {
   height: 15.2rem;
   padding: 0 4rem;
@@ -333,13 +351,25 @@ a:visited {
   color: #7eb693;
 }
 
-.vertical-cards {
+.section-top {
   max-width: 136rem;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 3.2rem;
-  margin: 0 auto;
+  gap: 2.4rem 8rem;
+  margin: 0 auto 4.8rem auto;
+}
+.section-top__subtitle {
+  color: #7eb693;
+}
+.section-top__title--white {
+  color: #fff;
+}
+.section-top__title--body {
+  color: #274c5b;
+}
+.section-top__button {
+  align-self: flex-end;
 }
 
 .about {
@@ -374,20 +404,29 @@ a:visited {
 
 .eco-friendly {
   background-color: #fff;
+  padding: 0 4rem;
   position: relative;
 }
-.eco-friendly__img {
-  width: 57vw;
-  display: block;
-  object-fit: cover;
-  height: clamp(71.2rem, 78vh, 100rem);
-}
-.eco-friendly__text-container {
+.eco-friendly__bg-container {
+  top: 0;
+  left: 0;
+  bottom: 0;
   position: absolute;
+  width: 57vw;
+  background-image: url(../img/farm.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.eco-friendly__content {
+  position: relative;
+  z-index: 1;
+  max-width: 136rem;
+  padding: clamp(5.6rem, 15vw - 16rem, 22rem) 0;
+  margin: 0 auto;
+}
+.eco-friendly__text-box {
+  margin-left: 47.6%;
   max-width: 71.2rem;
-  top: 50%;
-  left: 50%;
-  transform: translate(-6%, -50%);
   padding: 3.6rem 3.5rem 6.8rem 4.8rem;
   background-color: #fff;
   border-radius: 3.2rem;
@@ -425,40 +464,24 @@ a:visited {
   color: #7eb693;
 }
 
+.news {
+  background-color: #fff;
+  padding: 9.6rem 4rem 15.3rem;
+}
+
 .offer-products {
   background-color: #274c5b;
   padding: 8rem 4rem;
-}
-.offer-products__top {
-  max-width: 136rem;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 2.4rem 8rem;
-  margin: 0 auto 4.8rem auto;
-}
-.offer-products__subtitle {
-  color: #7eb693;
-}
-.offer-products__title {
-  color: #fff;
-}
-.offer-products__button {
-  align-self: flex-end;
 }
 
 .offers {
   background-color: #fff;
   padding: 9.6rem 4rem;
-  gap: 3.2rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .options {
-  padding: 8rem 4rem;
   background-color: #f7f7f7;
+  padding: 8rem 4rem;
 }
 
 .products {
