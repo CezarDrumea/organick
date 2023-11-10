@@ -4,6 +4,7 @@
   height: 58.4rem;
   background-size: cover;
   background-position: 50%;
+  cursor: pointer;
 
   &--1 {
     background-image: url(../img/juice.jpeg);
@@ -25,8 +26,8 @@
     height: 33.4rem;
     background: linear-gradient(
       180deg,
-      rgba(#000, 0) 0%,
-      rgba(#000, 0.74) 100%
+      rgba($color-black, 0) 0%,
+      rgba($color-black, 0.74) 100%
     );
     display: flex;
     justify-content: center;

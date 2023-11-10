@@ -49,7 +49,7 @@
 
       <section class="offers">
         <div class="cards">
-          <div class="offer-card offer-card--1">
+          <div class="card card--horizontal offer-card offer-card--1">
             <h5
               class="offer-card__subtitle offer-card__subtitle--1 text-display"
             >
@@ -60,7 +60,7 @@
             </h3>
           </div>
 
-          <div class="offer-card offer-card--2">
+          <div class="card card--horizontal offer-card offer-card--2">
             <h5
               class="offer-card__subtitle offer-card__subtitle--2 text-display"
             >
@@ -137,7 +137,7 @@
         <h2 class="products__title heading-2">Our Products</h2>
 
         <div class="cards">
-          <div class="vertical-card product-card">
+          <div class="card card--vertical product-card">
             <div class="label text-label-large">Vegetables</div>
             <figure>
               <img
@@ -194,7 +194,7 @@
             </div>
           </div>
 
-          <div class="vertical-card product-card">
+          <div class="card card--vertical product-card">
             <div class="label text-label-large">Vegetables</div>
             <figure>
               <img src="img/corn.jpeg" alt="Corn" class="product-card__img" />
@@ -247,7 +247,7 @@
             </div>
           </div>
 
-          <div class="vertical-card product-card">
+          <div class="card card--vertical product-card">
             <div class="label text-label-large">Millets</div>
             <figure>
               <img
@@ -304,11 +304,11 @@
             </div>
           </div>
 
-          <div class="vertical-card product-card">
+          <div class="card card--vertical product-card">
             <div class="label text-label-large">Vegetables</div>
             <figure>
               <img
-                src="img/tomato.jpeg"
+                src="img/cherry-tomatoes.jpeg"
                 alt="Tomato"
                 class="product-card__img"
               />
@@ -361,7 +361,7 @@
             </div>
           </div>
 
-          <div class="vertical-card product-card">
+          <div class="card card--vertical product-card">
             <div class="label text-label-large">Fruits</div>
             <figure>
               <img
@@ -418,7 +418,7 @@
             </div>
           </div>
 
-          <div class="vertical-card product-card">
+          <div class="card card--vertical product-card">
             <div class="label text-label-large">Millets</div>
             <figure>
               <img
@@ -548,11 +548,11 @@
         </div>
 
         <div class="cards">
-          <div class="vertical-card product-card">
+          <div class="card card--vertical product-card">
             <div class="label text-label-large">Vegetables</div>
             <figure>
               <img
-                src="img/tomato.jpeg"
+                src="img/cherry-tomatoes.jpeg"
                 alt="Tomato"
                 class="product-card__img"
               />
@@ -605,7 +605,7 @@
             </div>
           </div>
 
-          <div class="vertical-card product-card">
+          <div class="card card--vertical product-card">
             <div class="label text-label-large">Fruits</div>
             <figure>
               <img
@@ -662,7 +662,7 @@
             </div>
           </div>
 
-          <div class="vertical-card product-card">
+          <div class="card card--vertical product-card">
             <div class="label text-label-large">Vegetables</div>
             <figure>
               <img src="img/corn.jpeg" alt="Corn" class="product-card__img" />
@@ -760,7 +760,7 @@
 
       <section class="options">
         <div class="cards">
-          <div class="vertical-card option-card option-card--1">
+          <div class="card card--vertical option-card option-card--1">
             <div class="option-card__gradient">
               <div
                 class="option-card__label subtitle-medium subtitle-medium--bold"
@@ -770,7 +770,7 @@
             </div>
           </div>
 
-          <div class="vertical-card option-card option-card--2">
+          <div class="card card--vertical option-card option-card--2">
             <div class="option-card__gradient">
               <div
                 class="option-card__label subtitle-medium subtitle-medium--bold"
@@ -780,7 +780,7 @@
             </div>
           </div>
 
-          <div class="vertical-card option-card option-card--3">
+          <div class="card card--vertical option-card option-card--3">
             <div class="option-card__gradient">
               <div
                 class="option-card__label subtitle-medium subtitle-medium--bold"
@@ -795,13 +795,13 @@
       <section class="news">
         <div class="section-top">
           <div class="section-top__text-container">
-            <h5 class="section-top__subtitle text-display">Offer products</h5>
+            <h5 class="section-top__subtitle text-display">News</h5>
             <h2 class="section-top__title section-top__title--body heading-2">
-              We Offer Organic for You
+              Discover content about organic products
             </h2>
           </div>
           <button class="section-top__button button button--outline">
-            <span class="text-body-large">Explore Now</span>
+            <span class="text-body-large">More News</span>
             <svg class="button__icon">
               <use
                 href="img/sprite.svg#arrow-right"
@@ -811,16 +811,24 @@
           </button>
         </div>
 
-        <div class="cards">
-          <div class="news-card news-card news-card--1">
+        <div class="news__cards cards">
+          <div class="card card--horizontal news-card">
+            <div class="news-card__bg-img news-card__bg-img--1"></div>
             <div class="news-card__date">
-              <div class="news-card__day">14</div>
-              <div class="news-card__month">Feb</div>
+              <div class="news-card__day heading-4">14</div>
+              <div class="news-card__month text-label-small">Feb</div>
             </div>
-            <div class="news-card__label subtitle-medium subtitle-medium--bold">
+            <div class="news-card__text-box">
               <div class="news-card__customer">
-                <svg class="news-card__user-icon"></svg>
-                <div class="news-card__customer-name">Kristina Castle</div>
+                <svg class="news-card__user-icon">
+                  <use
+                    xlink:href="img/sprite.svg#user"
+                    href="img/sprite.svg#user"
+                  ></use>
+                </svg>
+                <span class="news-card__customer-name text-body-small"
+                  >Kristina Castle</span
+                >
               </div>
               <h6
                 class="news-card__subtitle subtitle-medium subtitle-medium--bold"
@@ -843,38 +851,168 @@
             </div>
           </div>
 
-          <div class="news-card news-card news-card--1">
+          <div class="card card--horizontal news-card">
+            <div class="news-card__bg-img news-card__bg-img--2"></div>
             <div class="news-card__date">
-              <div class="news-card__day">24</div>
-              <div class="news-card__month">Sep</div>
+              <div class="news-card__day heading-4">24</div>
+              <div class="news-card__month text-label-small">Sep</div>
             </div>
-            <div class="news-card__label subtitle-medium subtitle-medium--bold">
+            <div class="news-card__text-box">
               <div class="news-card__customer">
-                <svg class="news-card__user-icon"></svg>
-                <div class="news-card__customer-name">Alex Louis</div>
-                <h6
-                  class="news-card__subtitle subtitle-medium subtitle-medium--bold"
+                <svg class="news-card__user-icon">
+                  <use
+                    xlink:href="img/sprite.svg#user"
+                    href="img/sprite.svg#user"
+                  ></use>
+                </svg>
+                <span class="news-card__customer-name text-body-small"
+                  >Alex Louis</span
                 >
-                  Organic Fruits: Surprising Benefits and Facts
-                </h6>
-                <div class="news-card__text text-body-small">
-                  The world of nature has grown on the principles of health,
-                  ecology, and care.
-                </div>
-                <a href="#" class="button button--link">
-                  <span class="text-body-large">View More</span>
-                  <svg class="button__icon">
-                    <use
-                      href="img/sprite.svg#arrow-right"
-                      xlink:href="img/sprite.svg#arrow-right"
-                    ></use>
-                  </svg>
-                </a>
               </div>
+              <h6
+                class="news-card__subtitle subtitle-medium subtitle-medium--bold"
+              >
+                Organic Fruits: Surprising Benefits and Facts
+              </h6>
+              <div class="news-card__text text-body-small">
+                The world of nature has grown on the principles of health,
+                ecology, and care.
+              </div>
+              <a href="#" class="button button--link">
+                <span class="text-body-large">View More</span>
+                <svg class="button__icon">
+                  <use
+                    href="img/sprite.svg#arrow-right"
+                    xlink:href="img/sprite.svg#arrow-right"
+                  ></use>
+                </svg>
+              </a>
             </div>
           </div>
         </div>
       </section>
+
+      <section class="subscribe">
+        <div class="cards">
+          <div class="card subscribe__card">
+            <h2 class="heading-2 subscribe__title">
+              Subscribe to our Newsletter
+            </h2>
+            <form class="subscribe__form">
+              <input
+                type="email"
+                class="input text-body-small subscribe__email"
+                placeholder="Enter your email address"
+              />
+              <button class="button button--secondary">
+                <span class="text-body-large">Subscribe</span>
+                <svg class="button__icon">
+                  <use
+                    href="img/sprite.svg#arrow-right"
+                    xlink:href="img/sprite.svg#arrow-right"
+                  ></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__center">
+          <svg class="footer__logo">
+            <use
+              xlink:href="img/sprite.svg#logo-text"
+              href="img/sprite.svg#logo-text"
+            ></use>
+          </svg>
+          <p class="footer__text text-body-small">
+            We are a popular and farming company aspiring to be a leader in the
+            Organic food industry.
+          </p>
+          <div class="footer__social-media">
+            <a href="#" class="footer__icon-link">
+              <div class="footer__icon-box">
+                <svg class="footer__icon">
+                  <use
+                    xlink:href="img/sprite.svg#facebook"
+                    href="img/sprite.svg#facebook"
+                  ></use>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="footer__icon-link">
+              <div class="footer__icon-box">
+                <svg class="footer__icon">
+                  <use
+                    xlink:href="img/sprite.svg#twitter"
+                    href="img/sprite.svg#twitter"
+                  ></use>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="footer__icon-link">
+              <div class="footer__icon-box">
+                <svg class="footer__icon">
+                  <use
+                    xlink:href="img/sprite.svg#instagram"
+                    href="img/sprite.svg#instagram"
+                  ></use>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="footer__icon-link">
+              <div class="footer__icon-box">
+                <svg class="footer__icon">
+                  <use
+                    xlink:href="img/sprite.svg#twitter"
+                    href="img/sprite.svg#twitter"
+                  ></use>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <address class="footer__left">
+          <h4 class="heading-4 footer__contact-title">Contact Us</h4>
+          <span
+            class="footer__contact-subtitle text-body-large text-body-large--bold"
+            >Email</span
+          >
+          <p class="footer__contact-text text-body-small">
+            needhelp@organick.com
+          </p>
+          <span
+            class="footer__contact-subtitle text-body-large text-body-large--bold"
+            >Phone</span
+          >
+          <p class="footer__contact-text text-body-small">123 (1254) 1452</p>
+          <span
+            class="footer__contact-subtitle text-body-large text-body-large--bold"
+            >Address</span
+          >
+          <p class="footer__contact-text text-body-small">
+            88 Road, Brooklyn Street, USA
+          </p>
+        </address>
+
+        <div class="footer__right">
+          <h4 class="footer__utility-title heading-4">Utility Pages</h4>
+          <nav class="footer__utility-nav text-body-small">
+            <a href="#" class="footer__utility-link">Style Guide</a>
+            <a href="#" class="footer__utility-link">Protected</a>
+            <a href="#" class="footer__utility-link">Page Not Found</a>
+            <a href="#" class="footer__utility-link">Changelog</a>
+            <a href="#" class="footer__utility-link">Licenses</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__copyright text-body-small">
+        Copyright &copy; Organick
+      </div>
+    </footer>
   </body>
 </html>

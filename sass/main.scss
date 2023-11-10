@@ -1,3 +1,4 @@
+@import "./abstracts/mixins";
 @import "./abstracts/variables";
 @import "./abstracts/utilities";
 
@@ -5,15 +6,18 @@
 @import "./base/typography";
 
 @import "./components/button";
+@import "./components/card";
 @import "./components/icon-box";
+@import "./components/input";
 @import "./components/label";
+@import "./components/news-card";
 @import "./components/offer-card";
 @import "./components/option-card";
 @import "./components/product-card";
 @import "./components/rating";
-@import "./components/vertical-card";
 
 @import "./layout/cards";
+@import "./layout/footer";
 @import "./layout/header";
 @import "./layout/section-top";
 
@@ -25,4 +29,5 @@
 @import "./pages/offers";
 @import "./pages/options";
 @import "./pages/products";
+@import "./pages/subscribe";
 @import "./pages/testimonials";

@@ -1,0 +1,38 @@
+.subscribe {
+  padding: 0 4rem 9.6rem;
+
+  &__card {
+    max-width: 136rem;
+    min-width: 45rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3.2rem 8.6rem;
+    padding: 10.4rem 6.4rem;
+    background-image: url(../img/oranges.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+  }
+
+  &__title {
+    color: $color-white;
+    min-width: 36rem;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.4rem;
+    flex-basis: 63rem;
+  }
+
+  &__email {
+    min-width: 30.4rem;
+    flex: 1;
+  }
+}

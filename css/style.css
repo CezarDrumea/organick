@@ -32,10 +32,10 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #274c5b;
+  font-size: 62.5%;
 }
 
 a:link,
@@ -159,10 +159,26 @@ a:visited {
 .button--outline {
   background-color: #fff;
   border: 0.1rem solid #274c5b;
+  color: #274c5b;
 }
 .button--link:link, .button--link:visited {
+  gap: 1.2rem;
+  padding: 0;
   text-decoration: none;
   color: #274c5b;
+}
+
+.card {
+  border-radius: 3.2rem;
+  flex: 1;
+}
+.card--vertical {
+  max-width: 43.2rem;
+  min-width: 36.8rem;
+}
+.card--horizontal {
+  max-width: 66.4rem;
+  min-width: 40rem;
 }
 
 .icon-box {
@@ -186,6 +202,19 @@ a:visited {
   grid-column: 1/2;
 }
 
+.input {
+  background-color: #fff;
+  border: none;
+  border-radius: 1.6rem;
+  padding: 2.4rem 4.8rem;
+  outline: none;
+  color: #274c5b;
+}
+.input::placeholder {
+  font: inherit;
+  color: #525c60;
+}
+
 .label {
   padding: 0.8rem 2.4rem;
   background-color: #274c5b;
@@ -194,20 +223,84 @@ a:visited {
   border-radius: 0.8rem;
 }
 
-.offer-card {
-  max-width: 66.4rem;
-  min-width: 40rem;
-  flex: 1;
-  height: 38.4rem;
+.news-card {
+  position: relative;
+  padding: 25.2rem 2.4rem 0;
+  flex: 1 1 66.4rem;
+}
+.news-card__bg-img {
   background-size: cover;
   background-position: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: clamp(33.2rem, 36vw, 51.5rem);
+  z-index: 1;
   border-radius: 3.2rem;
+}
+.news-card__bg-img--1 {
+  background-image: url(../img/salad.jpeg);
+}
+.news-card__bg-img--2 {
+  background-image: url(../img/tomatoes.jpeg);
+}
+.news-card__date {
+  z-index: 2;
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.news-card__text-box {
+  z-index: 2;
+  position: relative;
+  background-color: #fff;
+  border-radius: 3.2rem;
+  box-shadow: 1.6rem 2.4rem 5.2rem -0.8rem rgba(0, 0, 0, 0.15);
+  padding: 4.8rem;
+}
+.news-card__customer {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  margin-bottom: 1.6rem;
+}
+.news-card__user-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.news-card__title {
+  margin-bottom: 1.6rem;
+}
+.news-card__text {
+  margin-bottom: 2.4rem;
+}
+
+.offer-card {
+  height: 38.4rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
   padding: 0 6.4rem;
   cursor: pointer;
+}
+.offer-card--1 {
+  background-image: url(../img/offer-1.jpeg);
+}
+.offer-card--2 {
+  background-image: url(../img/offer-2.jpeg);
 }
 .offer-card__subtitle--1 {
   color: #fff;
@@ -221,12 +314,6 @@ a:visited {
 .offer-card__title--1 {
   color: #fff;
 }
-.offer-card--1 {
-  background-image: url(../img/offer-1.jpeg);
-}
-.offer-card--2 {
-  background-image: url(../img/offer-2.jpeg);
-}
 
 .option-card {
   overflow: hidden;
@@ -234,6 +321,7 @@ a:visited {
   height: 58.4rem;
   background-size: cover;
   background-position: 50%;
+  cursor: pointer;
 }
 .option-card--1 {
   background-image: url(../img/juice.jpeg);
@@ -267,6 +355,7 @@ a:visited {
 .product-card {
   background-color: #f7f7f7;
   padding: 3.2rem;
+  cursor: pointer;
 }
 .product-card__img {
   display: block;
@@ -310,14 +399,6 @@ a:visited {
   width: 2.4rem;
 }
 
-.vertical-card {
-  border-radius: 3.2rem;
-  max-width: 43.2rem;
-  min-width: 36.8rem;
-  flex: 1;
-  cursor: pointer;
-}
-
 .cards {
   max-width: 136rem;
   display: flex;
@@ -325,6 +406,121 @@ a:visited {
   justify-content: center;
   gap: 3.2rem;
   margin: 0 auto;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.8rem;
+}
+.footer__content {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 3.2rem;
+  max-width: 136rem;
+  margin: 0 4rem;
+}
+.footer__center {
+  padding: 3.2rem 4.8rem 4.8rem;
+  text-align: center;
+  border-left: 0.1rem solid #d4d4d4;
+  border-right: 0.1rem solid #d4d4d4;
+  order: 2;
+}
+.footer__logo {
+  width: 20rem;
+  height: 5.6rem;
+  margin-bottom: 4rem;
+}
+.footer__social-media {
+  display: flex;
+  justify-content: center;
+  gap: 2.4rem;
+  margin-top: 6.4rem;
+}
+.footer__icon-box {
+  display: grid;
+  place-content: center;
+  width: 6.4rem;
+  height: 6.4rem;
+  background-color: #f7f7f7;
+  border-radius: 50%;
+}
+.footer__icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.footer__left, .footer__right {
+  padding: 0.8rem 1.6rem 0;
+  font-style: normal;
+  flex-basis: 34.8rem;
+}
+.footer__left {
+  order: 1;
+  text-align: right;
+}
+.footer__contact-title, .footer__utility-title {
+  margin-bottom: 4.8rem;
+}
+.footer__contact-subtitle {
+  color: #525c60;
+}
+.footer__contact-text:not(:last-of-type) {
+  color: #525c60;
+  margin-bottom: 3.2rem;
+}
+.footer__right {
+  order: 3;
+  text-align: left;
+}
+.footer__utility-link:link, .footer__utility-link:visited {
+  display: block;
+  text-decoration: none;
+  color: #525c60;
+}
+.footer__utility-link:not(:last-of-type) {
+  margin-bottom: 2.4rem;
+}
+.footer__copyright {
+  text-align: center;
+  border-top: 0.1rem solid #d4d4d4;
+  padding: 1.6rem 0;
+  color: #525c60;
+  align-self: stretch;
+}
+@media only screen and (max-width: 75em) {
+  .footer__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+  .footer__text {
+    margin: 0 auto;
+  }
+  .footer__center {
+    border: none;
+    order: 0;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
+  .footer__left {
+    order: 0;
+    border-right: 0.1rem solid #d4d4d4;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding-right: 4rem;
+  }
+  .footer__right {
+    order: 0;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding-left: 4rem;
+  }
+  .footer__text {
+    max-width: 56.7rem;
+  }
 }
 
 .header {
@@ -416,12 +612,13 @@ a:visited {
   background-image: url(../img/farm.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50% 60%;
 }
 .eco-friendly__content {
   position: relative;
   z-index: 1;
   max-width: 136rem;
-  padding: clamp(5.6rem, 15vw - 16rem, 22rem) 0;
+  padding: clamp(5.6rem, 15vw - 16rem, 20rem) 0;
   margin: 0 auto;
 }
 .eco-friendly__text-box {
@@ -494,6 +691,41 @@ a:visited {
 .products__title {
   text-align: center;
   margin-bottom: 4.8rem;
+}
+
+.subscribe {
+  padding: 0 4rem 9.6rem;
+}
+.subscribe__card {
+  max-width: 136rem;
+  min-width: 45rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3.2rem 8.6rem;
+  padding: 10.4rem 6.4rem;
+  background-image: url(../img/oranges.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+.subscribe__title {
+  color: #fff;
+  min-width: 36rem;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.subscribe__form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.4rem;
+  flex-basis: 63rem;
+}
+.subscribe__email {
+  min-width: 30.4rem;
+  flex: 1;
 }
 
 .testimonials {

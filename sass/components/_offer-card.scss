@@ -1,17 +1,22 @@
 .offer-card {
-  max-width: 66.4rem;
-  min-width: 40rem;
-  flex: 1;
   height: 38.4rem;
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: 50%;
-  border-radius: 3.2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
   padding: 0 6.4rem;
   cursor: pointer;
+
+  &--1 {
+    background-image: url(../img/offer-1.jpeg);
+  }
+
+  &--2 {
+    background-image: url(../img/offer-2.jpeg);
+  }
 
   &__subtitle {
     &--1 {
@@ -29,13 +34,5 @@
     &--1 {
       color: $color-white;
     }
-  }
-
-  &--1 {
-    background-image: url(../img/offer-1.jpeg);
-  }
-
-  &--2 {
-    background-image: url(../img/offer-2.jpeg);
   }
 }
