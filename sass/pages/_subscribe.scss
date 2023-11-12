@@ -3,7 +3,7 @@
 
   &__card {
     max-width: 136rem;
-    min-width: 45rem;
+    min-width: 36.8rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -18,8 +18,7 @@
 
   &__title {
     color: $color-white;
-    min-width: 36rem;
-    flex: 1;
+    flex: 1 0 32.3rem;
     display: flex;
     justify-content: center;
   }
