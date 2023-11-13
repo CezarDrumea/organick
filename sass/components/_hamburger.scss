@@ -3,6 +3,7 @@
   height: 1.6rem;
   position: relative;
   display: none;
+  z-index: 2;
 
   @include media(max, 56.25rem) {
     display: block;
@@ -11,7 +12,7 @@
   &__checkbox {
     display: none;
 
-    &:checked ~ .hamburger__line {
+    &:checked + .hamburger > .hamburger__line {
       &--top {
         top: 50%;
         transform: translateY(-50%) rotate(45deg);

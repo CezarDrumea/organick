@@ -21,18 +21,65 @@
           xlink:href="img/sprite.svg#logo-text"
         ></use>
       </svg>
-      <label class="hamburger">
-        <input type="checkbox" class="hamburger__checkbox" />
+      <input
+        type="checkbox"
+        class="hamburger__checkbox"
+        id="hamburger__checkbox"
+      />
+      <label class="hamburger" for="hamburger__checkbox">
         <div class="hamburger__line hamburger__line--top"></div>
         <div class="hamburger__line hamburger__line--center"></div>
         <div class="hamburger__line hamburger__line--bottom"></div>
       </label>
       <nav class="header__nav text-body-large">
-        <a href="#" class="header__link header__link--active">Home</a>
-        <a href="#" class="header__link">About Us</a>
-        <a href="#" class="header__link">Shop</a>
-        <a href="#" class="header__link">Pages</a>
-        <a href="#" class="header__link">Contact Us</a>
+        <input
+          type="radio"
+          class="header__radio-link"
+          name="radio-link"
+          id="home"
+          checked
+        />
+        <a href="#" class="header__link header__link">
+          <label for="home">Home</label>
+        </a>
+
+        <input
+          id="about"
+          type="radio"
+          class="header__radio-link"
+          name="radio-link"
+        />
+        <a href="#" class="header__link">
+          <label for="about">About Us</label>
+        </a>
+
+        <input
+          id="shop"
+          type="radio"
+          class="header__radio-link"
+          name="radio-link"
+        />
+        <a href="#" class="header__link">
+          <label for="shop">Shop</label>
+        </a>
+
+        <input
+          id="pages"
+          type="radio"
+          class="header__radio-link"
+          name="radio-link"
+        />
+        <a href="#" class="header__link"><label for="pages">Pages</label></a>
+
+        <input
+          id="contact"
+          type="radio"
+          class="header__radio-link"
+          name="radio-link"
+        />
+        <a href="#" class="header__link"
+          ><label for="contact">Contact Us</label></a
+        >
       </nav>
     </header>
 

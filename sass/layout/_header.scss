@@ -6,6 +6,14 @@
   align-items: center;
   justify-content: space-between;
 
+  &__radio-link {
+    display: none;
+
+    &:checked + a {
+      color: $color-primary;
+    }
+  }
+
   &__logo {
     height: 5.6rem;
     width: 20rem;
@@ -22,10 +30,29 @@
     &:link,
     &:visited {
       text-decoration: none;
+    }
+  }
 
-      &.header__link--active {
-        color: $color-primary;
-      }
+  @include media(max, 56.25em) {
+    position: relative;
+
+    &__nav {
+      display: block;
+      position: absolute;
+      top: -100vh;
+      left: 0;
+      right: 0;
+      height: 100vh;
+    }
+
+    &__link {
+      display: block;
+    }
+
+    .hamburger__checkbox:checked ~ &__nav {
+      top: 0;
+      height: 100vh;
+      background-color: $color-white;
     }
   }
 }
