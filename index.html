@@ -15,12 +15,6 @@
   </head>
   <body>
     <header class="header">
-      <svg class="header__logo">
-        <use
-          href="img/sprite.svg#logo-text"
-          xlink:href="img/sprite.svg#logo-text"
-        ></use>
-      </svg>
       <input
         type="checkbox"
         class="hamburger__checkbox"
@@ -31,6 +25,14 @@
         <div class="hamburger__line hamburger__line--center"></div>
         <div class="hamburger__line hamburger__line--bottom"></div>
       </label>
+
+      <svg class="header__logo">
+        <use
+          href="img/sprite.svg#logo-text"
+          xlink:href="img/sprite.svg#logo-text"
+        ></use>
+      </svg>
+
       <nav class="header__nav text-body-large">
         <input
           type="radio"
@@ -80,6 +82,49 @@
         <a href="#" class="header__link"
           ><label for="contact">Contact Us</label></a
         >
+
+        <div class="header__social-media social-media">
+          <a href="#" class="social-media__icon-link">
+            <div class="social-media__icon-box">
+              <svg class="social-media__icon">
+                <use
+                  xlink:href="img/sprite.svg#facebook"
+                  href="img/sprite.svg#facebook"
+                ></use>
+              </svg>
+            </div>
+          </a>
+          <a href="#" class="social-media__icon-link">
+            <div class="social-media__icon-box">
+              <svg class="social-media__icon">
+                <use
+                  xlink:href="img/sprite.svg#twitter"
+                  href="img/sprite.svg#twitter"
+                ></use>
+              </svg>
+            </div>
+          </a>
+          <a href="#" class="social-media__icon-link">
+            <div class="social-media__icon-box">
+              <svg class="social-media__icon">
+                <use
+                  xlink:href="img/sprite.svg#instagram"
+                  href="img/sprite.svg#instagram"
+                ></use>
+              </svg>
+            </div>
+          </a>
+          <a href="#" class="social-media__icon-link">
+            <div class="social-media__icon-box">
+              <svg class="social-media__icon">
+                <use
+                  xlink:href="img/sprite.svg#twitter"
+                  href="img/sprite.svg#twitter"
+                ></use>
+              </svg>
+            </div>
+          </a>
+        </div>
       </nav>
     </header>
 
@@ -90,7 +135,7 @@
           Welcome to the world of nature and organic.
         </h1>
         <button class="button button--primary">
-          <span class="text-body-large">Explore Now</span>
+          <span>Explore Now</span>
           <svg class="button__icon">
             <use
               href="img/sprite.svg#arrow-right"
@@ -101,7 +146,7 @@
       </section>
 
       <section class="offers">
-        <div class="cards">
+        <div class="cards offers__cards">
           <div class="card card--horizontal offer-card offer-card--1">
             <h5
               class="offer-card__subtitle offer-card__subtitle--1 text-display"
@@ -154,7 +199,9 @@
               </svg>
             </div>
             <h6 class="subtitle-medium">Organic Foods Only</h6>
-            <p class="about__principle-text text-body-small mb-2xs">
+            <p
+              class="about__principle-text about__principle-text--mb text-body-small"
+            >
               The Product that you ordered will be verified that we have or not
               if have we will start to move on with the next step.
             </p>
@@ -174,7 +221,7 @@
           </div>
 
           <button class="button button--secondary">
-            <span class="text-body-large">Shop Now</span>
+            <span>Shop Now</span>
             <svg class="button__icon">
               <use
                 href="img/sprite.svg#arrow-right"
@@ -189,7 +236,7 @@
         <h5 class="products__subtitle text-display">Organic</h5>
         <h2 class="products__title heading-2">Our Products</h2>
 
-        <div class="cards">
+        <div class="cards products__cards">
           <div class="card card--vertical product-card">
             <div class="label text-label-large">Vegetables</div>
             <figure>
@@ -590,7 +637,7 @@
             </h2>
           </div>
           <button class="section-top__button button button--primary">
-            <span class="text-body-large">Explore Now</span>
+            <span>Explore Now</span>
             <svg class="button__icon">
               <use
                 href="img/sprite.svg#arrow-right"
@@ -600,7 +647,7 @@
           </button>
         </div>
 
-        <div class="cards">
+        <div class="cards offer-products__cards">
           <div class="card card--vertical product-card">
             <div class="label text-label-large">Vegetables</div>
             <figure>
@@ -812,7 +859,7 @@
       </section>
 
       <section class="options">
-        <div class="cards">
+        <div class="cards options__cards">
           <div class="card card--vertical option-card option-card--1">
             <div class="option-card__gradient">
               <div
@@ -854,7 +901,7 @@
             </h2>
           </div>
           <button class="section-top__button button button--outline">
-            <span class="text-body-large">More News</span>
+            <span>More News</span>
             <svg class="button__icon">
               <use
                 href="img/sprite.svg#arrow-right"
@@ -893,7 +940,7 @@
                 the real world.
               </div>
               <a href="#" class="button button--link">
-                <span class="text-body-large">View More</span>
+                <span>View More</span>
                 <svg class="button__icon">
                   <use
                     href="img/sprite.svg#arrow-right"
@@ -932,7 +979,7 @@
                 ecology, and care.
               </div>
               <a href="#" class="button button--link">
-                <span class="text-body-large">View More</span>
+                <span>View More</span>
                 <svg class="button__icon">
                   <use
                     href="img/sprite.svg#arrow-right"
@@ -958,7 +1005,7 @@
                 placeholder="Enter your email address"
               />
               <button class="button button--secondary">
-                <span class="text-body-large">Subscribe</span>
+                <span>Subscribe</span>
                 <svg class="button__icon">
                   <use
                     href="img/sprite.svg#arrow-right"
@@ -985,10 +1032,10 @@
             We are a popular and farming company aspiring to be a leader in the
             Organic food industry.
           </p>
-          <div class="footer__social-media">
-            <a href="#" class="footer__icon-link">
-              <div class="footer__icon-box">
-                <svg class="footer__icon">
+          <div class="footer__social-media social-media">
+            <a href="#" class="social-media__icon-link">
+              <div class="social-media__icon-box">
+                <svg class="social-media__icon">
                   <use
                     xlink:href="img/sprite.svg#facebook"
                     href="img/sprite.svg#facebook"
@@ -996,9 +1043,9 @@
                 </svg>
               </div>
             </a>
-            <a href="#" class="footer__icon-link">
-              <div class="footer__icon-box">
-                <svg class="footer__icon">
+            <a href="#" class="social-media__icon-link">
+              <div class="social-media__icon-box">
+                <svg class="social-media__icon">
                   <use
                     xlink:href="img/sprite.svg#twitter"
                     href="img/sprite.svg#twitter"
@@ -1006,9 +1053,9 @@
                 </svg>
               </div>
             </a>
-            <a href="#" class="footer__icon-link">
-              <div class="footer__icon-box">
-                <svg class="footer__icon">
+            <a href="#" class="social-media__icon-link">
+              <div class="social-media__icon-box">
+                <svg class="social-media__icon">
                   <use
                     xlink:href="img/sprite.svg#instagram"
                     href="img/sprite.svg#instagram"
@@ -1016,9 +1063,9 @@
                 </svg>
               </div>
             </a>
-            <a href="#" class="footer__icon-link">
-              <div class="footer__icon-box">
-                <svg class="footer__icon">
+            <a href="#" class="social-media__icon-link">
+              <div class="social-media__icon-box">
+                <svg class="social-media__icon">
                   <use
                     xlink:href="img/sprite.svg#twitter"
                     href="img/sprite.svg#twitter"

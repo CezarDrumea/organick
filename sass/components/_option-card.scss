@@ -35,11 +35,28 @@
   }
 
   &__label {
+    display: block;
     text-align: center;
-    width: 32rem;
     background-color: $color-white;
     padding: 3.2rem 0;
     border-radius: 2.4rem;
-    margin-bottom: 5.6rem;
+    margin: 0 5.6rem 5.6rem;
+    flex: 1 1 32rem;
+  }
+
+  @include media(max, 62.5em) {
+    height: 54.4rem;
+
+    &__label {
+      margin: 0 3.2rem 5.6rem;
+    }
+  }
+
+  @include media(max, 31.25em) {
+    height: 50.4rem;
+
+    &__label {
+      margin: 0 2.4rem 5.6rem;
+    }
   }
 }

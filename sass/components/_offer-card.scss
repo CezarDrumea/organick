@@ -9,6 +9,16 @@
   align-items: start;
   padding: 0 6.4rem;
   cursor: pointer;
+  flex: 1 1 38.6rem;
+
+  @include media(max, 62.5em) {
+    height: 34rem;
+    padding: 0 5.4rem;
+  }
+
+  @include media(max, 31.25em) {
+    height: 32rem;
+  }
 
   &--1 {
     background-image: url(../img/offer-1.jpeg);

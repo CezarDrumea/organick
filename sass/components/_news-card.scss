@@ -59,11 +59,29 @@
     height: 2.4rem;
   }
 
-  &__title {
+  &__subtitle {
     margin-bottom: 1.6rem;
   }
 
   &__text {
     margin-bottom: 2.4rem;
+  }
+
+  @include media(max, 62.5em) {
+    &__text-box {
+      padding: 3.2rem;
+    }
+
+    &__cards {
+      gap: 3.2rem;
+    }
+  }
+
+  @include media(max, 31.25em) {
+    padding: 25.2rem 1.6rem 0;
+
+    &__text-box {
+      padding: 2.4rem 1.6rem;
+    }
   }
 }

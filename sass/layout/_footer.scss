@@ -28,24 +28,8 @@
   }
 
   &__social-media {
-    display: flex;
-    justify-content: center;
-    gap: 2.4rem;
     margin-top: 6.4rem;
-  }
-
-  &__icon-box {
-    display: grid;
-    place-content: center;
-    width: 6.4rem;
-    height: 6.4rem;
-    background-color: $color-grey-1;
-    border-radius: 50%;
-  }
-
-  &__icon {
-    width: 2.4rem;
-    height: 2.4rem;
+    gap: 2.4rem;
   }
 
   &__left,
@@ -80,11 +64,13 @@
   }
 
   &__utility-link {
+    &,
     &:link,
     &:visited {
       display: block;
       text-decoration: none;
       color: $color-grey-5;
+      width: fit-content;
     }
 
     &:not(:last-of-type) {
@@ -105,6 +91,10 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 0;
+
+      @include media(max, 62.5em) {
+        margin: 0 2.4rem;
+      }
     }
 
     &__text {
@@ -135,6 +125,54 @@
 
     &__text {
       max-width: 56.7rem;
+    }
+  }
+
+  @include media(max, 43.75em) {
+    &__content {
+      grid-template-columns: 1fr;
+
+      @include media(max, 31.25em) {
+        margin: 0 1.6rem;
+      }
+    }
+
+    &__center {
+      grid-column: auto;
+      grid-row: auto;
+      padding: 3.2rem 0 0;
+    }
+
+    &__left {
+      border-right: none;
+      grid-column: auto;
+      grid-row: auto;
+      padding: 0;
+      text-align: left;
+    }
+
+    &__right {
+      grid-column: auto;
+      grid-row: auto;
+      padding: 0;
+    }
+
+    &__contact-title,
+    &__utility-title {
+      margin-bottom: 2.4rem;
+      margin-top: 6.4rem;
+    }
+
+    &__contact-text:not(:last-of-type) {
+      margin-bottom: 1.6rem;
+    }
+
+    &__utility-link:not(:last-of-type) {
+      margin-bottom: 1.6rem;
+    }
+
+    &__copyright {
+      padding: 2.4rem 0;
     }
   }
 }

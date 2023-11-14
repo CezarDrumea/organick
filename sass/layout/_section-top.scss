@@ -8,6 +8,10 @@
 
   &__subtitle {
     color: $color-primary;
+
+    @include media(max, 31.25em) {
+      margin-bottom: 1.6rem;
+    }
   }
 
   &__title {

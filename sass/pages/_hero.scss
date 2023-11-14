@@ -3,6 +3,7 @@
   background-image: url(../img/hero.jpeg);
   background-size: cover;
   background-position: 50%;
+  background-repeat: no-repeat;
   padding: 0 4rem;
   display: grid;
   grid-template-columns: minmax(min-content, 136rem);
@@ -16,5 +17,21 @@
 
   &__subtitle {
     color: $color-primary;
+  }
+
+  @include media(max, 62.5em) {
+    height: calc(100vh - 9.6rem);
+    background-position: 32%;
+    padding: 0 2.4rem;
+
+    &__title {
+      margin-bottom: 4rem;
+      max-width: 46rem;
+    }
+  }
+
+  @include media(max, 31.25em) {
+    height: calc(100vh - 7.2rem);
+    padding: 0 1.6rem;
   }
 }

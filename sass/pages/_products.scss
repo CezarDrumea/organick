@@ -8,6 +8,19 @@
 
   &__title {
     text-align: center;
-    margin-bottom: 4.8rem;
+    margin-bottom: 4rem;
+  }
+
+  @include media(max, 62.5em) {
+    padding: 7.2rem 2.4rem;
+    margin-bottom: 3.2rem;
+
+    &__cards {
+      gap: 2.4rem;
+    }
+  }
+
+  @include media(max, 31.25em) {
+    padding: 6.4rem 1.6rem;
   }
 }

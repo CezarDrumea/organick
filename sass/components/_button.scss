@@ -6,12 +6,21 @@
   border: none;
   border-radius: 1.6rem;
   background-color: transparent;
-  font: inherit;
+  font-size: 2rem;
+  letter-spacing: 0.036rem;
+  line-height: 3.2rem;
+  font-family: "Roboto";
   cursor: pointer;
 
+  @include media(max, 62.5em) {
+    font-size: 1.8rem;
+    gap: 1.6rem;
+    padding: 1.6rem 2.4rem;
+  }
+
   &__icon {
-    width: 3.5rem;
-    height: 1.2rem;
+    width: 3.7rem;
+    height: 1.4rem;
   }
 
   &--primary {
