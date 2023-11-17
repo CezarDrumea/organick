@@ -33,7 +33,7 @@
   &__email {
     min-width: 26rem;
     max-width: 42rem;
-    flex: 1;
+    flex: 1 1 30.4rem;
   }
 
   @include media(max, 62.5em) {
